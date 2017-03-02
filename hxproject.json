@@ -1,0 +1,13 @@
+{
+    "classPaths": ["src", "test"],
+    "entryPoints": ["Test", "pack.Cls"],
+    "mainClass": "Main",
+    "libraries": ["hxnodejs"],
+    "debug": false,
+    "defines": ["some", "other", "analyzer-optimize"],
+    "output": {
+        "target": "js",
+        "path": "main.js"
+    },
+    "deadCodeElimination": "full"
+}

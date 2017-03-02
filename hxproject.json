@@ -1,4 +1,5 @@
 {
+    "$schema": "./hxproject.schema.json",
     "classPaths": ["src", "test"],
     "entryPoints": ["Test", "pack.Cls"],
     "mainClass": "Main",

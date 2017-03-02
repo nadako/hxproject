@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "properties": {
+        "classPaths": {
+            "type": "array",
+            "items": {"type": "string"}
+        },
+        "entryPoints": {
+            "type": "array",
+            "items": {"type": "string"}
+        },
+        "libraries": {
+            "type": "array",
+            "items": {"type": "string"}
+        },
+        "defines": {
+            "type": "array",
+            "items": {"type": "string"}
+        },
+        "mainClass": {
+            "type": "string"
+        },
+        "debug": {
+            "type": "boolean"
+        },
+        "output": {
+            "type": "object",
+            "properties": {
+                "path": {"type": "string"},
+                "target": {
+                    "type": "string",
+                    "enum": [
+                        "js"
+                    ]
+                }
+            },
+            "required": ["target", "path"]
+        },
+        "deadCodeElimination": {
+            "type": "string",
+            "enum": ["no", "std", "full"]
+        }
+    }
+}
